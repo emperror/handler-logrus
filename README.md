@@ -21,11 +21,14 @@ go get handler.emperror.dev/logrus
 package main
 
 import (
-	"handler.emperror.dev/logrus"
+	"github.com/sirupsen/logrus"
+
+	logrushandler "handler.emperror.dev/logrus"
 )
 
 func main() {
-
+	logger := logrus.New()
+	handler := logrushandler.New(logger)
 }
 ```
 
