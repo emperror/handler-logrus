@@ -5,7 +5,7 @@ linters-settings:
     golint:
         min-confidence: 0.1
     goimports:
-        local-prefixes: handler.emperror.dev/logrus
+        local-prefixes: emperror.dev/handler/logrus
 
 service:
     golangci-lint-version: 1.17.x

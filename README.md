@@ -1,9 +1,9 @@
 # Logrus handler
 
 [![CircleCI](https://circleci.com/gh/emperror/handler-logrus.svg?style=svg)](https://circleci.com/gh/emperror/handler-logrus)
-[![Go Report Card](https://goreportcard.com/badge/handler.emperror.dev/logrus?style=flat-square)](https://goreportcard.com/report/handler.emperror.dev/logrus)
+[![Go Report Card](https://goreportcard.com/badge/emperror.dev/handler/logrus?style=flat-square)](https://goreportcard.com/report/emperror.dev/handler/logrus)
 [![GolangCI](https://golangci.com/badges/github.com/emperror/handler-logrus.svg)](https://golangci.com/r/github.com/emperror/handler-logrus)
-[![GoDoc](http://img.shields.io/badge/godoc-reference-5272B4.svg?style=flat-square)](https://godoc.org/handler.emperror.dev/logrus)
+[![GoDoc](http://img.shields.io/badge/godoc-reference-5272B4.svg?style=flat-square)](https://godoc.org/emperror.dev/handler/logrus)
 
 **Error handler integration for [Logrus](https://github.com/sirupsen/logrus).**
 
@@ -11,7 +11,7 @@
 ## Installation
 
 ```bash
-go get handler.emperror.dev/logrus
+go get emperror.dev/handler/logrus
 ```
 
 
@@ -23,7 +23,7 @@ package main
 import (
 	"github.com/sirupsen/logrus"
 
-	logrushandler "handler.emperror.dev/logrus"
+	logrushandler "emperror.dev/handler/logrus"
 )
 
 func main() {

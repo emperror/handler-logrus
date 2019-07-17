@@ -3,7 +3,7 @@ package logrus_test
 import (
 	"github.com/sirupsen/logrus"
 
-	logrushandler "handler.emperror.dev/logrus"
+	logrushandler "emperror.dev/handler/logrus"
 )
 
 func ExampleNew() {

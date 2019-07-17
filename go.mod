@@ -1,4 +1,4 @@
-module handler.emperror.dev/logrus
+module emperror.dev/handler/logrus
 
 go 1.12
 
