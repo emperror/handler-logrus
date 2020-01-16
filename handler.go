@@ -2,6 +2,8 @@
 package logrus
 
 import (
+	"context"
+
 	"emperror.dev/errors"
 	"emperror.dev/errors/utils/keyval"
 	"github.com/sirupsen/logrus"
@@ -25,7 +27,7 @@ func (h *Handler) Handle(err error) {
 
 	// Extract details from the error and attach it to the log
 	if details := errors.GetDetails(err); len(details) > 0 {
-		logger = h.logger.WithFields(logrus.Fields(keyval.ToMap(details)))
+		logger = h.logger.WithFields(keyval.ToMap(details))
 	}
 
 	type errorCollection interface {
@@ -39,4 +41,9 @@ func (h *Handler) Handle(err error) {
 	} else {
 		logger.Error(err.Error())
 	}
+}
+
+// HandleContext logs an error.
+func (h *Handler) HandleContext(_ context.Context, err error) {
+	h.Handle(err)
 }
